@@ -1,10 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
-        <h1>Hello World</h1>
-    </main></Layout
->
+        <div id="bio-container">
+            <div>
+                <img
+                    id="selfie"
+                    src="/public/img/self-portrait.jpg"
+                    alt="portrait of Joseph Newman in black and white"
+                />
+            </div>
+            <div>
+                <h1>Hi, my name is Joseph Newman</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        <h2>Selected Projects</h2>
+
+        <style>
+            #bio-container {
+                display: flex;
+                gap: 25px;
+                margin-bottom: 75px;
+            }
+            #selfie {
+                height: auto;
+                width: 600px;
+            }
+        </style>
+    </main>
+</Layout>
