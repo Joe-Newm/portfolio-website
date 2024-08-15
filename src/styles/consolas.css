@@ -1,0 +1,58 @@
+/* Regular */
+@font-face {
+    font-family: "Consolas";
+    src: url("/fonts/Consolas.eot"); /* IE9 Compatibility Modes */
+    src:
+        local("Consolas"),
+        url("/fonts/Consolas.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Consolas.woff2") format("woff2"),
+        url("/fonts/Consolas.woff") format("woff"),
+        url("/fonts/Consolas.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: "Consolas";
+    src: url("/fonts/Consolas-Italic.eot"); /* IE9 Compatibility Modes */
+    src:
+        local("Consolas Italic"),
+        local("Consolas-Italic"),
+        url("/fonts/Consolas-Italic.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Consolas-Italic.woff2") format("woff2"),
+        url("/fonts/Consolas-Italic.woff") format("woff"),
+        url("/fonts/Consolas-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: "Consolas";
+    src: url("/fonts/Consolas-BoldItalic.eot"); /* IE9 Compatibility Modes */
+    src:
+        local("Consolas Bold Italic"),
+        local("Consolas-BoldItalic"),
+        url("/fonts/Consolas-BoldItalic.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Consolas-BoldItalic.woff2") format("woff2"),
+        url("/fonts/Consolas-BoldItalic.woff") format("woff"),
+        url("/fonts/Consolas-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: "Consolas";
+    src: url("/fonts/Consolas-Bold.eot"); /* IE9 Compatibility Modes */
+    src:
+        local("Consolas Bold"),
+        local("Consolas-Bold"),
+        url("/fonts/Consolas-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Consolas-Bold.woff2") format("woff2"),
+        url("/fonts/Consolas-Bold.woff") format("woff"),
+        url("/fonts/Consolas-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
