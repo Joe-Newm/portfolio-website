@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -22,8 +23,9 @@ import Layout from "../layouts/Layout.astro";
                 </p>
             </div>
         </div>
-        <h2>Selected Projects</h2>
-
+        <h2 class="mb-5">Selected Projects</h2>
+            <Project projectName={"Pokemon-TCG Cards"} tools={["node.js", "express.js", "ejs", "API"]} link={"https://pokemon-tcg-web.fly.dev/"}/>
+            <Project projectName={"Space Invaders Clone"} tools={["java", "libGDX"]} link={"https://joe-newm.github.io/space-invaders-web/"}/>
         <style>
             #bio-container {
                 display: flex;
