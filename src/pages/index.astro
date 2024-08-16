@@ -5,7 +5,7 @@ import Project from "../components/Project.astro";
 
 <Layout title="Welcome to Astro.">
     <main>
-        <div id="bio-container">
+        <div id="bio-container" class="mb-20">
             <div>
                 <img
                     id="selfie"
@@ -14,8 +14,8 @@ import Project from "../components/Project.astro";
                 />
             </div>
             <div>
-                <h1>Hi, my name is Joseph Newman</h1>
-                <p>
+                <h1>Hi, I'm Joseph Newman</h1>
+                <p class="text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -24,13 +24,15 @@ import Project from "../components/Project.astro";
             </div>
         </div>
         <h2 class="mb-5">Selected Projects</h2>
-            <Project projectName={"Pokemon-TCG Cards"} tools={["node.js", "express.js", "ejs", "API"]} link={"https://pokemon-tcg-web.fly.dev/"}/>
+            <Project projectName={"Pokemon-TCG Cards"} tools={["javascript", "node.js", "express.js", "ejs"]} link={"https://pokemon-tcg-web.fly.dev/"}/>
             <Project projectName={"Space Invaders Clone"} tools={["java", "libGDX"]} link={"https://joe-newm.github.io/space-invaders-web/"}/>
+
+        <h2 class="mt-20 mb-6"> Get in touch </h2>
+        <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
         <style>
             #bio-container {
                 display: flex;
                 gap: 25px;
-                margin-bottom: 75px;
             }
             #selfie {
                 height: auto;
