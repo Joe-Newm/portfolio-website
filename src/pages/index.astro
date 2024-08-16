@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
+import Social from "../components/Social.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -22,13 +23,18 @@ import Project from "../components/Project.astro";
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
+                <div class="flex gap-4 mt-5">
+                <Social socialName="Github" link="https://github.com/Joe-Newm"></Social>
+                <Social socialName="Linkedin" link="https://linkedin.com/in/joseph-newman-a54900159"></Social>
+                <Social socialName="Resume" link="/public/documents/Joseph_Newman_Resume_v4.pdf"></Social>
+                </div>
             </div>
         </div>
         <h2 class="mb-5">Selected Projects</h2>
             <Project github={"https://github.com/Joe-Newm/pokemon-tcg-web"} projectName={"Pokemon-TCG Cards"} tools={["javascript", "node.js", "express.js", "ejs"]} link={"https://pokemon-tcg-web.fly.dev/"}/>
             <Project github={"https://github.com/Joe-Newm/space-invader-clone"} projectName={"Space Invaders Clone"} tools={["java", "libGDX"]} link={"https://joe-newm.github.io/space-invaders-web/"}/>
 
-        <h2 class="mt-20 mb-6"> Get in touch </h2>
+        <h2 class="mt-20 mb-6"> Get in Touch </h2>
         <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
         
     </main>
