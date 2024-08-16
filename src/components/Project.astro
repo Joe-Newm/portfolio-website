@@ -3,9 +3,12 @@
 const { projectName = 'Default Project', tools = [], link } = Astro.props;
 ---
 
-<a href={link} target="_blank" id="project" class="border-gray-400 border rounded-md  h-14 flex items-center gap-3 mt-4 p-5 transition ease-in-out hover:-translate-y-2 duration-300">
-    <p id="name"class="m-0" >{projectName}</p>
-    <p class="text-gray-600">&#x2022; {tools.length > 0 ? tools.join(', ') : 'N/A'}</p>
+<a href={link} target="_blank" id="project" class="border-gray-400 border rounded-md  h-14 flex justify-between items-center mt-4 p-5 transition ease-in-out hover:-translate-y-2 duration-300 gap-5">
+    <div class="flex gap-5">
+        <p id="name"class="m-0" >{projectName}</p>
+        <p class="text-gray-600"> {tools.length > 0 ? tools.join(' • ') : 'N/A'}</p>
+    </div>
+    <p class="text-gray-600 text-2xl font-extralight">&#8594;</p>
 </a>
 
 <style>

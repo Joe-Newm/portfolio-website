@@ -5,17 +5,18 @@ import Project from "../components/Project.astro";
 
 <Layout title="Welcome to Astro.">
     <main>
-        <div id="bio-container" class="mb-20">
+        <div id="bio-container" class="mb-20 flex flex-col lg:flex-row  lg:justify-between gap-10">
             <div>
                 <img
                     id="selfie"
+                    class="h-auto"
                     src="/public/img/self-portrait.jpg"
                     alt="portrait of Joseph Newman in black and white"
                 />
             </div>
             <div>
                 <h1>Hi, I'm Joseph Newman</h1>
-                <p class="text-gray-600">
+                <p class="text-gray-600 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -29,15 +30,6 @@ import Project from "../components/Project.astro";
 
         <h2 class="mt-20 mb-6"> Get in touch </h2>
         <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
-        <style>
-            #bio-container {
-                display: flex;
-                gap: 25px;
-            }
-            #selfie {
-                height: auto;
-                width: 600px;
-            }
-        </style>
+        
     </main>
 </Layout>
