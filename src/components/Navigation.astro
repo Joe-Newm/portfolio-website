@@ -16,34 +16,60 @@
           </div>
         </label>
       </div> -->
-    <div>
-        
-        <a class="text-gray-600" href="/">Home / </a>
+    <div class="flex">
+        <a
+            class={`text-gray-600 transition hover:text-black ${Astro.url.pathname === "/" ? "active" : ""}`}
+            href="/"
+        >
+            Home
+        </a>
+        <p class="text-gray-600 separator">/</p>
         <!-- <a class="text-gray-600" href="/about/">About / </a> -->
-        <a class="text-gray-600" href="/blog/">Blog</a>
-        <a class="text-gray-600" href="/documents/Joseph_Newman_Resume_v4.pdf" target="_blank"> / Resume</a>
+        <a
+            class={`text-gray-600 transition hover:text-black ${Astro.url.pathname === "/blog/" ? "active" : ""}`}
+            href="/blog/"
+        >
+            Blog
+        </a>
+        <p class="text-gray-600 separator">
+            / <p>
+                <a
+                    class="text-gray-600 transition hover:text-black"
+                    href="/documents/Joseph_Newman_Resume_v4.pdf"
+                    target="_blank"
+                >
+                    Resume</a
+                >
+            </p>
+        </p>
+
+        <style>
+            .active {
+                color: #000;
+            }
+            .separator {
+                padding: 0 5px; /* Adjust the padding to your preference */
+            }
+            nav {
+                margin-top: 75px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+                padding: 0px 40px;
+                width: calc(100% - 640px);
+                max-width: 900px;
+                min-width: 800px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            /* For small screens, adjust the layout */
+            @media (max-width: 700px) {
+                nav {
+                    min-width: 100%; /* Let it go full width on smaller screens */
+                    padding: 0 20px; /* Adjust padding for smaller devices */
+                }
+            }
+        </style>
     </div>
 </nav>
-
-<style>
-    nav {
-        margin-top: 75px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-        padding: 0px 40px;
-        width: calc(100% - 640px);
-        max-width: 900px;
-        min-width: 800px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* For small screens, adjust the layout */
-    @media (max-width: 700px) {
-        nav {
-            min-width: 100%; /* Let it go full width on smaller screens */
-            padding: 0 20px; /* Adjust padding for smaller devices */
-        }
-    }
-</style>
