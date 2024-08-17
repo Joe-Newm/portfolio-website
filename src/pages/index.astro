@@ -13,18 +13,21 @@ import Social from "../components/Social.astro";
             <div>
                 <img
                     id="selfie"
-                    class="h-auto"
+                    class="w-96"
                     src="img/self-portrait.jpg"
                     alt="portrait of Joseph Newman in black and white"
                 />
             </div>
-            <div>
+            <div class="basis-full">
                 <h1>Hi, I'm Joseph Newman</h1>
-                <p class="text-gray-600">
+                <!-- <p class="text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p> -->
+                <p class="text-gray-600">
+                    I'm a full-stack web developer with a background in UI/UX and graphic design, passionate about building dynamic and engaging web experiences. I specialize in crafting clean, responsive front-end interfaces using HTML, CSS, and JavaScript, while also handling back-end development with Node.js and Express.js. I'm dedicated to creating scalable and efficient applications from concept to deployment.
                 </p>
                 <div class="flex gap-4 mt-5">
                     <Social
@@ -35,10 +38,10 @@ import Social from "../components/Social.astro";
                         socialName="Linkedin"
                         link="https://linkedin.com/in/joseph-newman-a54900159"
                     />
-                    <Social
+                    <!-- <Social
                         socialName="Resume"
                         link="/documents/Joseph_Newman_Resume_v4.pdf"
-                    />
+                    /> -->
                 </div>
             </div>
         </div>
