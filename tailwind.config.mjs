@@ -8,6 +8,9 @@ export default {
 				light: '#f1f1f1', // Custom light mode color
 				dark: '#1a1a1a', // Custom dark mode color
 			},
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			  },
 		},
 	},
 	plugins: [],

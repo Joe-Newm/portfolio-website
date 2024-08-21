@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
 import Social from "../components/Social.astro";
+import Projectclick from "../components/Projectclick.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -50,18 +51,65 @@ import Social from "../components/Social.astro";
             tools={["java", "libGDX"]}
             link={"https://joe-newm.github.io/space-invaders-web/"}
         />
-        <Project
+        <Projectclick
             github={"https://github.com/Joe-Newm/pixel-art-editor"}
             projectName={"Pixel Art Editor (.exe)"}
             tools={["python", "pyside6"]}
-            openInNewTab={false}
-            link={"/documents/josephs-pixel-art-editor-windows.zip"}
+            
         />
         <div class="mt-4 border border-gray-400 rounded-md p-5">
             <img src="https://ghchart.rshah.org/joe-newm" class="w-full " alt="GitHub Contributions" />
         </div>
+        <div id="overlay"></div>
+        <div id="popupDialog">
+            <div class="flex justify-end">
+                <a id="x" class=" text-right cursor-pointer font-bold"> X </a>
+            </div>
+            <h2 class="text-center font-inter "> Choose Version</h2>
+
+            <div class="flex-grow relative group">
+            <a href="documents/josephs-pixel-art-editor-windows.zip" 
+            class="w-full flex justify-center items-center relative z-10 border border-gray-400 rounded-md h-14 mt-4 p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
+            Windows </a>
+            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+            </div>
+
+        <div class="flex-grow relative group">
+            <a href="documents/josephs-pixel-art-editor-mac.zip" class="w-full text-center relative z-10 border-gray-400 border rounded-md h-14 flex justify-center items-center mt-4 p-5 transition ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:border-black bg-white font-inter">Mac</a>
+            
+            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+        </div>
 
         <h2 class="mt-20 mb-6">Get in Touch</h2>
         <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
+
+
+        <style>
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+        }
+
+        #popupDialog {
+            display: none;
+            border: 1px solid black;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            width: 40%;
+            height: 50%;
+            border-radius: 5px;
+            z-index: 200;
+        }
+        </style>
     </main>
 </Layout>
