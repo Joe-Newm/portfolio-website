@@ -11,6 +11,15 @@ export default {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
 			  },
+			keyframes: {
+			'slide-up': {
+        	'0%': { transform: 'translate(-50%, 100%)' },
+        	'150%': { transform: 'translate(-50%, 0)' },
+    		},
+			},
+			animation: {
+			'slide-up': 'slide-up 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55)',
+			},
 		},
 	},
 	plugins: [],

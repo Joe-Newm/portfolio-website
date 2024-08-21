@@ -53,7 +53,7 @@ import Projectclick from "../components/Projectclick.astro";
         />
         <Projectclick
             github={"https://github.com/Joe-Newm/pixel-art-editor"}
-            projectName={"Pixel Art Editor (.exe)"}
+            projectName={"Pixel Art Editor (Download)"}
             tools={["python", "pyside6"]}
             
         />
@@ -64,27 +64,27 @@ import Projectclick from "../components/Projectclick.astro";
         <h2 class="mt-20 mb-6">Get in Touch</h2>
         <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
 
-        <div id="overlay"></div>
-        <div id="popupDialog">
+        <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+        <div id="popupDialog" class="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-5 rounded-t-lg w-full  z-50 animate-slide-up">
             <div class="flex justify-end">
-                <a id="x" class=" text-right cursor-pointer font-bold"> X </a>
+                <a id="x" class="cursor-pointer font-bold">X</a>
             </div>
-            <h2 class="text-center font-inter "> Choose Version</h2>
-
-            <div class="flex-grow relative group">
-            <a href="documents/josephs-pixel-art-editor-windows.zip" 
-            class="w-full flex justify-center items-center relative z-10 border border-gray-400 rounded-md h-14 mt-4 p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
-            Windows </a>
-            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-            </div>
-
-        <div class="flex-grow relative group">
-            <a href="documents/josephs-pixel-art-editor-mac.zip" class="w-full text-center relative z-10 border-gray-400 border rounded-md h-14 flex justify-center items-center mt-4 p-5 transition ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:border-black bg-white font-inter">Mac</a>
-            
-            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-        </div>
-
+            <h2 class="text-center font-inter">Choose Version</h2>
         
+            <div class="flex-grow relative group">
+                <a href="documents/josephs-pixel-art-editor-windows.zip"
+                   class="w-full flex justify-center items-center relative z-10 border border-gray-400 rounded-md h-14 mt-4 p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
+                    Windows
+                </a>
+            </div>
+        
+            <div class="flex-grow relative group mt-4">
+                <a href="documents/josephs-pixel-art-editor-mac.zip"
+                   class="w-full text-center relative z-10 border border-gray-400 rounded-md h-14 flex justify-center items-center p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
+                    Mac
+                </a>
+            </div>
+        </div>
 
 
         <style>
@@ -116,3 +116,4 @@ import Projectclick from "../components/Projectclick.astro";
         </style>
     </main>
 </Layout>
+
