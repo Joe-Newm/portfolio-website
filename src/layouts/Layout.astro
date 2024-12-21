@@ -12,6 +12,7 @@ import Navigation from "../components/Navigation.astro";
         <meta name="author" content="Joseph Newman"/>
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+<link type="text/css" rel="stylesheet" href="/webapp/style.css" media="all"/>
         <link rel="stylesheet" href="/styles/global.css" />
         <link rel="stylesheet" href="/styles/consolas.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +23,11 @@ import Navigation from "../components/Navigation.astro";
         />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+
+
+
+	<script type="text/javascript" src="/rom-patcher-js/RomPatcher.webapp.js"></script>
+	<script type="text/javascript" src="/webapp/webapp.js"></script>
     </head>
     <body>
         <Navigation />
