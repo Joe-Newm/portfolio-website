@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
 import Social from "../components/Social.astro";
 import Projectclick from "../components/Projectclick.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -38,7 +39,7 @@ import Projectclick from "../components/Projectclick.astro";
                 </div>
             </div>
         </div>
-        <h2 class="mb-5">Selected Projects</h2>
+        <h2 class="mb-5 font-semibold">Selected Projects</h2>
         <Project
             github={"https://github.com/Joe-Newm/techsavvy-wordpress-theme"}
             projectName={"Techsavvy Business Website"}
@@ -82,7 +83,7 @@ import Projectclick from "../components/Projectclick.astro";
 
 
         <!-- The Rom Patcher -->
-        <h2 class="mt-20 mb-6">Rom Patcher</h2>
+        <h2 class="mt-20 mb-6 font-semibold">Rom Patcher</h2>
 <div id="wrapper">
 
 	<div class="tab border rounded-md border-gray-400">
@@ -180,8 +181,18 @@ import Projectclick from "../components/Projectclick.astro";
 
 
         
-        <h2 class="mt-20 mb-6">Get in Touch</h2>
-        <p class="text-gray-600">Email me at j.newm500@gmail.com</p>
+        <h2 class="mt-20 mb-6 font-semibold">Get in Touch</h2>
+		<!-- <p class="text-gray-600">Email me at j.newm500@gmail.com</p> -->
+
+		<ContactForm></ContactForm>
+
+
+
+
+
+
+	
+		<!-- hidden pop up for download -->
 
         <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
         <div id="popupDialog" class="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-5 rounded-t-lg w-full  z-50 animate-slide-up">
