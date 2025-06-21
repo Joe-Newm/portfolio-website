@@ -9,11 +9,7 @@
 
 /* Rom Patcher JS - container */
 #rom-patcher-container {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
+	
 	line-height: 1.8;
 
 	background-color: #f9fafa;
