@@ -8,71 +8,88 @@ import SocialBig from "../components/SocialBig.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-    <main>
-        <div id="bio-container"
-            class="mb-20 flex flex-col lg:flex-row lg:justify-between gap-10">
-        <div>
-            <img id="selfie" class="w-96" src="img/self-portrait.jpg" alt="portrait of Joseph Newman in black and white"/></div>
-            <div class="basis-full">
-                <h1>Hi, I'm Joseph Newman</h1>
-                <!-- <p class="text-gray-600">
+  <main>
+    <div
+      id="bio-container"
+      class="mb-20 flex flex-col lg:flex-row lg:justify-between gap-10"
+    >
+      <div>
+        <img
+          id="selfie"
+          class="w-96"
+          src="img/self-portrait.jpg"
+          alt="portrait of Joseph Newman in black and white"
+        />
+      </div>
+      <div class="basis-full">
+        <h1>Hi, I'm Joseph Newman</h1>
+        <!-- <p class="text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p> -->
-                <p class="text-gray-600">
-                    I'm a full-stack web developer with a background in UI/UX and graphic design, passionate about building dynamic and engaging web experiences. I specialize in crafting clean, responsive front-end interfaces using HTML, CSS, and JavaScript, while also handling back-end development with Node.js and Express.js. I'm dedicated to creating scalable and efficient applications from concept to deployment.
-                </p>
-                <div class="flex gap-4 mt-5">
-                    <Social
-                        socialName="Github"
-                        link="https://github.com/Joe-Newm"
-                    />
-                    <Social
-                        socialName="Linkedin"
-                        link="https://linkedin.com/in/joseph-newman-a54900159"
-                    />
-                    <!-- <Social
+        <p class="text-gray-600">
+          I'm a full-stack web developer with a background in UI/UX and graphic
+          design, passionate about building dynamic and engaging web
+          experiences. I specialize in crafting clean, responsive front-end
+          interfaces using HTML, CSS, and JavaScript, while also handling
+          back-end development with Node.js and Express.js. I'm dedicated to
+          creating scalable and efficient applications from concept to
+          deployment.
+        </p>
+        <div class="flex gap-4 mt-5">
+          <Social socialName="Github" link="https://github.com/Joe-Newm" />
+          <Social
+            socialName="Linkedin"
+            link="https://linkedin.com/in/joseph-newman-a54900159"
+          />
+          <!-- <Social
                         socialName="Resume"
                         link="/documents/Joseph_Newman_Resume_v4.pdf"
                     /> -->
-                </div>
-            </div>
         </div>
-        <h2 class="mb-5 font-semibold">Selected Projects</h2>
-        <Project
-            github={"https://github.com/Joe-Newm/techsavvy-wordpress-theme"}
-            projectName={"Techsavvy Business Website"}
-                        tools={["custom wordpress theme", "PHP", "bootstrap"]}
-            link={"https://techsavvy.llc/"}
-		/>
-        <Project
-            github={"https://github.com/Joe-Newm/techsavvy-react-native"}
-            projectName={"Techsavvy Hub App"}
-                        tools={["react native", "node.js", "express.js"]}
-            link={"https://apps.apple.com/us/app/techsavvy-hub/id6742513587"}
-		/>
-        <Project
-            github={"https://github.com/Joe-Newm/pokemon-tcg-web"}
-            projectName={"Pokemon-TCG Cards"}
-            tools={["javascript", "node.js", "express.js", "ejs"]}
-            link={"https://pokemon-tcg-web.fly.dev/"}
-		/>
+      </div>
+    </div>
+    <h2 class="mb-5 font-semibold">Selected Projects</h2>
+    <Project
+      github={"https://github.com/Joe-Newm/art-portfolio-creator.git"}
+      projectName={"Art Portfolio Creator App"}
+      tools={["react", "node.js", "firebase"]}
+      link={"https://art-portfolio-creator.netlify.app/login"}
+    />
+    <Project
+      github={"https://github.com/Joe-Newm/techsavvy-wordpress-theme"}
+      projectName={"Techsavvy Business Website"}
+      tools={["custom wordpress theme", "PHP", "bootstrap"]}
+      link={"https://techsavvy.llc/"}
+    />
+    <Project
+      github={"https://github.com/Joe-Newm/techsavvy-react-native"}
+      projectName={"Techsavvy Hub App"}
+      tools={["react native", "node.js", "express.js"]}
+      link={"https://apps.apple.com/us/app/techsavvy-hub/id6742513587"}
+    />
+    <Project
+      github={"https://github.com/Joe-Newm/pokemon-tcg-web"}
+      projectName={"Pokemon-TCG Cards"}
+      tools={["javascript", "node.js", "express.js", "ejs"]}
+      link={"https://pokemon-tcg-web.fly.dev/"}
+    />
 
-        <Project
-            github={"https://github.com/Joe-Newm/libGDX-shooter-game"}
-            projectName={"Zombie Survival Game"}
-            tools={["java", "libGDX"]}
-            link={"https://joe-newm.github.io/shooter-game-web/"}
-        />
-        <Project
-            github={"https://github.com/Joe-Newm/space-invader-clone"}
-            projectName={"Space Invaders Clone"}
-            tools={["java", "libGDX"]}
-            link={"https://joe-newm.github.io/space-invaders-web/"}
-        />
-        <!--         
+    <Project
+      github={"https://github.com/Joe-Newm/libGDX-shooter-game"}
+      projectName={"Zombie Survival Game"}
+      tools={["java", "libGDX"]}
+      link={"https://joe-newm.github.io/shooter-game-web/"}
+    />
+    <Project
+      github={"https://github.com/Joe-Newm/space-invader-clone"}
+      projectName={"Space Invaders Clone"}
+      tools={["java", "libGDX"]}
+      link={"https://joe-newm.github.io/space-invaders-web/"}
+    />
+    <!--         
         <Projectclick
             github={"https://github.com/Joe-Newm/pixel-art-editor"}
             projectName={"Pixel Art Editor (Download)"}
@@ -80,108 +97,127 @@ import SocialBig from "../components/SocialBig.astro";
         /> 
         -->
 
-        <div class="mt-4 border border-gray-400 rounded-md p-5">
-            <img src="https://ghchart.rshah.org/joe-newm" class="w-full " alt="GitHub Contributions" />
+    <div class="mt-4 border border-gray-400 rounded-md p-5">
+      <img
+        src="https://ghchart.rshah.org/joe-newm"
+        class="w-full"
+        alt="GitHub Contributions"
+      />
+    </div>
+
+    <!-- <p class="text-gray-600">Email me at j.newm500@gmail.com</p> -->
+
+    <div class="flex flex-col md:flex-row w-full gap-4 h-full">
+      <div class="flex flex-col w-full">
+        <h2 class="mt-20 mb-6 font-semibold">Get in Touch</h2>
+        <ContactForm />
+      </div>
+      <!-- <div id="xterm-container"></div> -->
+      <div class="flex flex-col w-full">
+        <h2 class="mt-20 mb-6 font-semibold">Quick Links</h2>
+
+        <div class="flex flex-col gap-4">
+          <div
+            class="bg-white border-gray-400 border flex p-5 rounded-md h-full gap-5 flex-col items-center"
+          >
+            <div class="justify-between w-full pb-4">
+              <SocialBig
+                socialName="Github"
+                link="https://github.com/Joe-Newm"
+              />
+              <SocialBig
+                socialName="Linkedin"
+                link="https://linkedin.com/in/joseph-newman-a54900159"
+              />
+              <SocialBig
+                socialName="Resume"
+                link="/documents/Joseph-Newman-Resume-v7.pdf"
+              />
+            </div>
+          </div>
+
+          <div
+            class="p-5 cursor-pointer bg-black flex rounded-md w-full h-full items-center justify-center"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          >
+            <img src="/logo.svg" class="h-16 invert" />
+          </div>
         </div>
+      </div>
+    </div>
 
+    <!-- hidden pop up for download -->
 
+    <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40">
+    </div>
+    <div
+      id="popupDialog"
+      class="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-5 rounded-t-lg w-full z-50 animate-slide-up"
+    >
+      <div class="flex justify-end">
+        <a id="x" class="cursor-pointer font-bold">X</a>
+      </div>
+      <h2 class="text-center font-inter">Choose Version</h2>
 
+      <div class="flex-grow relative group">
+        <a
+          href="documents/josephs-pixel-art-editor-windows.zip"
+          class="w-full flex justify-center items-center relative z-10 border border-gray-400 rounded-md h-14 mt-4 p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter"
+        >
+          Windows
+        </a>
+        <div
+          class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        >
+        </div>
+      </div>
 
-        
-		<!-- <p class="text-gray-600">Email me at j.newm500@gmail.com</p> -->
-		
-		<div class="flex flex-col md:flex-row w-full gap-4 h-full">
-			<div class="flex flex-col w-full">
-				<h2 class="mt-20 mb-6 font-semibold">Get in Touch</h2>
-				<ContactForm></ContactForm>
-			</div>
-			<!-- <div id="xterm-container"></div> -->	
-			<div class="flex flex-col w-full">
-                    <h2 class="mt-20 mb-6 font-semibold">Quick Links</h2>
-            
-            <div class="flex flex-col gap-4">
-            <div class="bg-white border-gray-400 border flex p-5 rounded-md h-full gap-5 flex-col items-center ">
-                <div class=" justify-between w-full pb-4">
-                    <SocialBig socialName="Github" link="https://github.com/Joe-Newm"/>
-                    <SocialBig socialName="Linkedin" link="https://linkedin.com/in/joseph-newman-a54900159"/>
-                    <SocialBig socialName="Resume" link="/documents/Joseph-Newman-Resume-v7.pdf"/>
-                </div>
-            </div>
+      <div class="flex-grow relative group mt-4">
+        <a
+          href="documents/josephs-pixel-art-editor-mac.zip"
+          class="w-full text-center relative z-10 border border-gray-400 rounded-md h-14 flex justify-center items-center p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter"
+        >
+          Mac
+        </a>
 
-                <div class="p-5 cursor-pointer bg-black flex rounded-md w-full h-full items-center justify-center"   onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-                    <img src="/logo.svg" class="h-16 invert" />
-                </div>
-                </div>
-			</div>
+        <div
+          class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        >
+        </div>
+      </div>
+    </div>
 
-		</div>
+    <style>
+      #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 199;
+      }
 
-
-	
-		<!-- hidden pop up for download -->
-
-        <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
-        <div id="popupDialog" class="fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white p-5 rounded-t-lg w-full  z-50 animate-slide-up">
-            <div class="flex justify-end">
-                <a id="x" class="cursor-pointer font-bold">X</a>
-            </div>
-            <h2 class="text-center font-inter">Choose Version</h2>
-        
-            <div class="flex-grow relative group">
-                <a href="documents/josephs-pixel-art-editor-windows.zip"
-                    class="w-full flex justify-center items-center relative z-10 border border-gray-400 rounded-md h-14 mt-4 p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
-                    Windows
-                </a>
-            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-            </div>
-        
-            <div class="flex-grow relative group mt-4">
-                <a href="documents/josephs-pixel-art-editor-mac.zip"
-                   class="w-full text-center relative z-10 border border-gray-400 rounded-md h-14 flex justify-center items-center p-5 transition-transform duration-300 transform hover:-translate-y-2 hover:border-black bg-white font-inter">
-                    Mac
-                </a>
-
-            <div class="absolute inset-0 h-10 mt-4 bg-black rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
-            </div>
-		</div>
-
-
-
-
-        <style>
-        #overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 199;
-        }
-
+      #popupDialog {
+        display: none;
+        border: 1px solid black;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        width: 40%;
+        height: 50%;
+        border-radius: 5px;
+        z-index: 200;
+      }
+      @media only screen and (max-width: 700px) {
         #popupDialog {
-            display: none;
-            border: 1px solid black;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 20px;
-            width: 40%;
-            height: 50%;
-            border-radius: 5px;
-            z-index: 200;
+          width: 80%;
         }
-        @media only screen and (max-width: 700px) {
-            #popupDialog {
-                width: 80%;
-
-            }
-            
-        }
-        </style>
-	</main>
+      }
+    </style>
+  </main>
 </Layout>
-
