@@ -11,7 +11,7 @@ import SocialBig from "../components/SocialBig.astro";
   <main>
     <div
       id="bio-container"
-      class="mb-20 flex flex-col lg:flex-row lg:justify-between gap-10"
+      class="mb-4 flex flex-col lg:flex-row lg:justify-between gap-10"
     >
       <div>
         <img
@@ -44,14 +44,21 @@ import SocialBig from "../components/SocialBig.astro";
             socialName="Linkedin"
             link="https://linkedin.com/in/joseph-newman-a54900159"
           />
-          <!-- <Social
-                        socialName="Resume"
-                        link="/documents/Joseph_Newman_Resume_v4.pdf"
-                    /> -->
+          <Social socialName="Resume" link="/documents/Joseph-Newman-Resume-v7.pdf"/>
         </div>
       </div>
     </div>
-    <h2 class="mb-5 font-semibold">Selected Projects</h2>
+
+    <div class="mb-20 border border-gray-400 rounded-md p-5 mb-20">
+      <img
+        src="https://ghchart.rshah.org/joe-newm"
+        class="w-full"
+        alt="GitHub Contributions"
+      />
+    </div>
+
+    <h2 class=" font-semibold">Selected Projects</h2>
+    <hr class="mb-5 border-black"/>
     <div class="md:grid-cols-2 grid gap-4 ">
     <Project
       github={"https://github.com/Joe-Newm/art-portfolio-creator.git"}
@@ -61,7 +68,7 @@ import SocialBig from "../components/SocialBig.astro";
       projectDescription={"Art Portfolio Creator is a customizable content management app built with React and Firebase (Realtime Database & Storage). It allows artists to build and manage their own portfolio website without writing code. Users can log into a secure dashboard to update the site’s name, hero image, about page, and create/edit art posts with images and descriptions."}
       img="/img/Screenshot-art-portfolio-creator.png"
       altText="Image of Art Portfolio Creator Dashboard"
-      size="660px"
+      size="680px"
       />
     <Project
       github={"https://github.com/Joe-Newm/techsavvy-wordpress-theme"}
@@ -71,7 +78,7 @@ import SocialBig from "../components/SocialBig.astro";
       projectDescription={"I designed and developed a custom WordPress theme for Techsavvy LLC, a managed IT service provider. The project included full-stack development using HTML, CSS, and PHP, along with complete branding — I created the logo, selected color schemes, and designed the entire user experience from scratch. The site features dynamic contact and referral forms."}
       img="/img/Home-Techsavvy-Website(1).png"
       altText="Image of Techsavvy Website homepage"
-      size="660px"
+      size="680px"
     />
     <Project
       github={"https://github.com/Joe-Newm/techsavvy-react-native"}
@@ -81,7 +88,7 @@ import SocialBig from "../components/SocialBig.astro";
       projectDescription={"I developed the Techsavvy Hub mobile app using React Native for the frontend and Express.js for the backend. The app allows clients to submit detailed service requests, which are sent directly to ConnectWise Manage via its API. Submissions include priority, due date, and category, and the backend automatically matches the user’s email to their contact record in ConnectWise, assigning the ticket accordingly."}
       img="/img/techsavvy-hub-app.jpg"
       altText="Image of ad to download techsavvy-hub-app"
-      size="660px"
+      size="680px"
     />
     <Project
       github={"https://github.com/Joe-Newm/pokemon-tcg-web"}
@@ -91,7 +98,7 @@ import SocialBig from "../components/SocialBig.astro";
       img="/img/pokemon-tcg.png"
       altText="image of pokemon-tcg website homepage"
       projectDescription="This full-stack web app allows users to browse, search, and explore Pokémon trading cards with detailed information including pricing, stats, and artwork. The site integrates with the Pokémon TCG API to display dynamic card data. Users can search cards by name using a live search bar and navigate through results with server-side pagination for a smooth, responsive experience. "
-      size="660px"
+      size="680px"
     />
 
     <!--         
@@ -105,15 +112,10 @@ import SocialBig from "../components/SocialBig.astro";
 
 
 
-    <div class="mt-4 border border-gray-400 rounded-md p-5">
-      <img
-        src="https://ghchart.rshah.org/joe-newm"
-        class="w-full"
-        alt="GitHub Contributions"
-      />
-    </div>
 
-    <h2 class="mb-5 mt-24 font-semibold">Game Projects</h2>
+    <h2 class=" mt-20 font-semibold">Game Projects</h2>
+    <hr class="mb-5 border-black"/>
+
     <div class="md:grid-cols-2 grid gap-4 "> 
     <Project
       github={"https://github.com/Joe-Newm/libGDX-shooter-game"}
@@ -137,11 +139,14 @@ import SocialBig from "../components/SocialBig.astro";
 
     <div class="flex flex-col md:flex-row w-full gap-4 h-full">
       <div class="flex flex-col w-full">
-        <h2 class="mt-20 mb-6 font-semibold">Get in Touch</h2>
+        <h2 class="mt-20  font-semibold">Get in Touch</h2>
+            <hr class="mb-5 border-black"/>
+        
         <ContactForm />
       </div>
       <!-- <div id="xterm-container"></div> -->
-      <div class="flex flex-col w-full">
+
+      <!-- <div class="flex flex-col w-full">
         <h2 class="mt-20 mb-6 font-semibold">Quick Links</h2>
 
         <div class="flex flex-col gap-4">
@@ -164,16 +169,16 @@ import SocialBig from "../components/SocialBig.astro";
             </div>
           </div>
 
-          <div
-            class="p-5 cursor-pointer bg-black flex rounded-md w-full h-full items-center justify-center"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-          >
-            <img src="/logo.svg" class="h-16 invert" />
-          </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
+          <div
+            class="mt-10 p-5 cursor-pointer bg-black flex rounded-md w-full h-16 items-center justify-center"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          >
+            <img src="/logo.svg" class="h-8 invert" />
+          </div>
     <!-- hidden pop up for download -->
 
     <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40">

@@ -34,10 +34,12 @@ import Social from "./Social.astro";
       
       >
       <div class="flex md:flex-col flex-col gap-4 ">
-        <div class="rounded-md basis-1/4 shadow-lg">
-          <img src={img} alt={altText} class="h-auto object-cover rounded-md" />
+
+        <div class="rounded-md  shadow-lg h-64 w-full overflow-hidden">
+          <img src={img} alt={altText} class=" object-cover rounded-md" />
         </div>
-        <div class="text-container md:flex flex-col gap-x-5 gap-2 basis-3/4">
+
+        <div class="text-container md:flex flex-col gap-x-5 gap-2">
           <div class="md:flex flex-col gap-2 ">
             <p id="name" class="m-0 font-bold md:mt-0 mt-4 text-lg">{projectName}</p>
             <p class="text-gray-600">
