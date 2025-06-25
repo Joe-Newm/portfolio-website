@@ -8,6 +8,7 @@ const {
   projectDescription,
   img,
   altText,
+  size
 } = Astro.props;
 import Social from "./Social.astro";
 ---
@@ -25,17 +26,19 @@ import Social from "./Social.astro";
     >
     </div> -->
   </div>
-  <div class="flex-grow relative group">
+  <div class="flex-grow ">
     <div
       id="project"
-      class="card w-full relative z-10 border-gray-400 border rounded-md h-auto flex justify-between mt-4 p-5 transition ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:border-black gap-5 bg-white"
-    >
-      <div class="flex md:flex-row flex-col gap-4">
-        <div class="rounded-md">
-          <img src={img} alt={altText} class="h-max object-contain rounded-md" />
+      class=`card w-full relative z-10 border-gray-400 border rounded-md flex justify-between mt-4 p-5 gap-5 bg-white`  
+      style={`min-height: ${size}`}
+      
+      >
+      <div class="flex md:flex-col flex-col gap-4 ">
+        <div class="rounded-md basis-1/4 shadow-lg">
+          <img src={img} alt={altText} class="h-auto object-cover rounded-md" />
         </div>
-        <div class="text-container md:flex flex-col gap-x-5 gap-2">
-          <div class="md:flex flex-col gap-2">
+        <div class="text-container md:flex flex-col gap-x-5 gap-2 basis-3/4">
+          <div class="md:flex flex-col gap-2 ">
             <p id="name" class="m-0 font-bold md:mt-0 mt-4 text-lg">{projectName}</p>
             <p class="text-gray-600">
               {tools.length > 0 ? tools.join(" • ") : "N/A"}
@@ -45,16 +48,10 @@ import Social from "./Social.astro";
             <p>{projectDescription}</p>
           </div>
           <div class="flex gap-4">
-            <Social socialName="Github" link={github} />
+            <Social socialName="Github Page" link={github} />
             <Social socialName="Live Website" link={link} />
           </div>
         </div>
-        <p
-          class="text-gray-600 text-2xl font-extralight transition-transform group-hover:translate-x-2 duration-300"
-          style="min-width: 1.5rem;"
-        >
-          &#8594;
-        </p>
       </div>
     </div>
   </div>
