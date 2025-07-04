@@ -8,7 +8,7 @@ const {
   projectDescription,
   img,
   altText,
-  size
+  size,
 } = Astro.props;
 import Social from "./Social.astro";
 ---
@@ -26,51 +26,58 @@ import Social from "./Social.astro";
     >
     </div> -->
   </div>
-  <div class="flex-grow ">
+  <div class="flex-grow">
     <div
       id="project"
-      class=`card w-full shadow-md relative z-10 border-gray-300 border rounded-md flex justify-between mt-4 p-5 gap-5 bg-white`  
+      class=`card w-full shadow-md relative z-10 border-gray-300 border rounded-md flex justify-between mt-4 p-5 gap-5 bg-white`
       style={`min-height: ${size}`}
-      
-      >
-      <div class="flex md:flex-col flex-col gap-4 ">
-
-        <div class="rounded-md  shadow-lg h-64 w-full overflow-hidden">
-          <img src={img} alt={altText} class=" object-cover rounded-md" />
+    >
+      <div class="flex md:flex-col flex-col gap-4">
+        <div class="rounded-md shadow-lg h-64 w-full overflow-hidden">
+          <img src={img} alt={altText} class="object-cover rounded-md" />
         </div>
 
         <div class="text-container md:flex flex-col gap-x-5 gap-2">
-          <div class="md:flex flex-col gap-2 ">
-            <p id="name" class="m-0 font-bold md:mt-0 mt-4 text-lg">{projectName}</p>
-            <p class="text-gray-600">
-              {tools.length > 0 ? tools.join(" • ") : "N/A"}
+          <div class="md:flex flex-col gap-2">
+            <p id="name" class="m-0 font-bold md:mt-0 mt-4 text-lg">
+              {projectName}
             </p>
-          </div>
-          <div>
-            <p>{projectDescription}</p>
-          </div>
-          <div class="flex gap-4">
-            <Social socialName="Github Page" link={github} />
-            <Social socialName="Live Website" link={link} />
+            <!-- {tools.length > 0 ? tools.join(" • ") : "N/A"} -->
+            <div class="flex flex-wrap gap-4">
+              {
+                tools.map((tool) => (
+                  <div class="h-min min-w-min pt-1 pb-1 pl-4 pr-4 bg-gray-100 rounded-md">
+                    <p>{tool}</p>
+                  </div>
+                ))
+              }
+            </div>
+            <div>
+              <p>{projectDescription}</p>
+            </div>
+            <div class="flex gap-4">
+              <Social socialName="Github Page" link={github} />
+              <Social socialName="Live Website" link={link} />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<style>
-  #name {
-    font-family: inter;
-  }
-  @media only screen and (max-width: 600px) {
-    .full-container {
+  <style>
+    #name {
+      font-family: inter;
     }
-    .card {
-      height: auto;
+    @media only screen and (max-width: 600px) {
+      .full-container {
+      }
+      .card {
+        height: auto;
+      }
+      .text-container {
+        flex-wrap: wrap;
+      }
     }
-    .text-container {
-      flex-wrap: wrap;
-    }
-  }
-</style>
+  </style>
+</div>

@@ -1,51 +1,81 @@
+---
 
 ---
 
+<div
+  class="border-gray-300 shadow-md border items-center flex p-10 rounded-md h-full bg-white"
+>
+  <form
+    action="https://api.web3forms.com/submit"
+    method="POST"
+    class="flex flex-col w-full gap-4"
+  >
+    <input
+      type="hidden"
+      name="access_key"
+      value="85abb1f3-f60a-417d-af7e-e4578381d90a"
+    />
+    <div class="flex flex-col">
+      <label class="font-semibold">Name</label>
+      <input
+        type="text"
+        name="name"
+        required
+        class="border border-gray-700 rounded-md p-2"
+      />
+    </div>
 
----
-<div class="border-gray-300 shadow-md border items-center flex p-10 rounded-md h-full">
-<form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col  w-full gap-4">
+    <div class="flex flex-col">
+      <label class="font-semibold">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        class="border border-gray-700 rounded-md p-2"
+      />
+    </div>
 
-	<input type="hidden" name="access_key" value="85abb1f3-f60a-417d-af7e-e4578381d90a">
-	<div class="flex flex-col">
-		<label class="font-semibold">Name</label>
-		<input type="text" name="name" required class="border border-gray-700 rounded-md p-2 ">
-		</div>
+    <div class="flex flex-col">
+      <label class="font-semibold">Message</label>
+      <textarea
+        name="message"
+        required
+        class="resize-none h-32 border border-gray-700 rounded-md p-2"
+      ></textarea>
+    </div>
+    <input
+      type="hidden"
+      name="redirect"
+      value="https://web3forms.com/success"
+    />
+    <div class="relative group w-20">
+      <button
+        class="bg-black text-white justify-center w-20 relative z-10 border-black border rounded-md h-2 flex items-center mt-4 p-4 transition ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:border-black gap-5"
+        type="submit">Submit</button
+      >
 
-	<div class="flex flex-col">
-	<label class="font-semibold ">Email</label>
-	<input type="email" name="email" required class="border border-gray-700 rounded-md p-2">
-		</div>
-
-
-	<div class="flex flex-col">
-	<label class="font-semibold">Message</label>
-			<textarea name="message" required class="resize-none h-32 border border-gray-700 rounded-md p-2"></textarea>
-		</div>
-	<input type="hidden" name="redirect" value="https://web3forms.com/success">
-	<div class="relative group w-20">
-    <button class="bg-black text-white justify-center w-20 relative z-10 border-black border rounded-md h-2 flex  items-center mt-4 p-4 transition ease-in-out duration-300 transform group-hover:-translate-y-2 group-hover:border-black gap-5" type="submit">Submit</button>
-
-    <div class="w-20 absolute inset-0 h-4 mt-8 bg-white border-black border rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></div>
+      <div
+        class="w-20 absolute inset-0 h-4 mt-8 bg-white border-black border rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"
+      >
+      </div>
+    </div>
+  </form>
 </div>
-	</form>
-</div>
-
 
 <style>
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
 
-	input {
-	}
+  input {
+  }
 
-	button {
-	}
+  button {
+  }
 </style>
