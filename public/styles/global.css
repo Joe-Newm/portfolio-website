@@ -10,12 +10,22 @@ h1 {
     font-size: 48px !important;
     font-weight: 600;
     margin-bottom: 25px !important;
+    color: black;
 }
 
 h2 {
     font-family: inter;
     font-size: 32px !important;
     font-weight: 600;
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+h4 {
+    color: black;
 }
 
 main {

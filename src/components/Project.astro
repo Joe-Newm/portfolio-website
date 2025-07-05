@@ -39,10 +39,12 @@ import Social from "./Social.astro";
 
         <div class="text-container md:flex flex-col gap-x-5 gap-2">
           <div class="md:flex flex-col gap-2">
-            <p id="name" class="m-0 font-bold md:mt-0 mt-4 text-lg">
+            <h3 id="name" class="m-0 font-bold md:mt-0 mt-4 text-xl">
               {projectName}
-            </p>
+            </h3>
             <!-- {tools.length > 0 ? tools.join(" • ") : "N/A"} -->
+
+            <hr class="border-1 border-gray-300 mb-2" />
             <div class="flex flex-wrap gap-4">
               {
                 tools.map((tool) => (
@@ -52,9 +54,10 @@ import Social from "./Social.astro";
                 ))
               }
             </div>
-            <div>
+            <hr class="border-1 border-gray-300 mt-2" />
+            <iv>
               <p>{projectDescription}</p>
-            </div>
+            </iv>
             <div class="flex gap-4">
               <Social socialName="Github Page" link={github} />
               <Social socialName="Live Website" link={link} />
