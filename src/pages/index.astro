@@ -171,12 +171,6 @@ import SocialBig from "../components/SocialBig.astro";
       </div> -->
     </div>
 
-    <div
-      class="mt-10 p-5 cursor-pointer bg-black flex rounded-md w-full h-16 items-center justify-center"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-    >
-      <img src="/logo.svg" class="h-8 invert" />
-    </div>
     <!-- hidden pop up for download -->
 
     <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40">
@@ -218,7 +212,15 @@ import SocialBig from "../components/SocialBig.astro";
       </div>
     </div>
 
+    <div
+      class="mt-24 p-5 cursor-pointer bg-black flex w-screen h-10 items-center justify-center absolute left-0"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <img src="/logo.svg" class="h-6 invert" />
+    </div>
+    
     <style>
+
       #overlay {
         display: none;
         position: fixed;
