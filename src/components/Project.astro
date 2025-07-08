@@ -29,12 +29,18 @@ import Social from "./Social.astro";
   <div class="flex-grow">
     <div
       id="project"
-      class=`card w-full shadow-md relative z-10 border-gray-400 border rounded-xl flex justify-between mt-4 p-5 gap-5 bg-gray-200`
+      class=`card w-full shadow-md relative z-10 border-gray-400 border rounded-xl flex justify-between mt-4 p-5 gap-5 bg-gray-200 md:p-10`
       style={`min-height: ${size}`}
     >
       <div class="flex md:flex-col flex-col gap-4">
-        <div class="rounded-md border border-1 border-gray-400 bg-white shadow-sm h-64 w-full overflow-hidden">
-          <img src={img} alt={altText} class="object-cover rounded-md max-w-200 max-h-200" />
+        <div
+          class="rounded-md border border-1 border-gray-400 bg-white shadow-sm h-40 md:h-64 w-full overflow-hidden"
+        >
+          <img
+            src={img}
+            alt={altText}
+            class="rounded-md w-full min-h-full object-cover"
+          />
         </div>
 
         <div class="text-container md:flex flex-col gap-x-5 gap-2">
