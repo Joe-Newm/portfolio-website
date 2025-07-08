@@ -34,8 +34,7 @@ main {
     margin-right: auto;
     margin-bottom: 50px;
     
-    width: calc(100% - 640px);
-    max-width: 900px;
+    width: calc(100% - 540px);
     min-width: 800px;
     
 }

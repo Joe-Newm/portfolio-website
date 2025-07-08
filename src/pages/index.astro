@@ -13,7 +13,7 @@ import SocialBig from "../components/SocialBig.astro";
       id="bio-container"
       class="mb-4 flex flex-col lg:flex-row lg:justify-between gap-10"
     >
-      <div class="border border-1 border-gray-400 rounded-xl overflow-hidden w-96 object-cover">
+      <div class="border border-1 border-gray-400 rounded-xl overflow-hidden w-auto md:w-96 ">
         <img
           id="selfie"
           class="w-full h-full object-cover"
@@ -63,7 +63,7 @@ import SocialBig from "../components/SocialBig.astro";
 
 
     <h2 class="font-semibold mb-10 mt-32">Selected Projects</h2>
-    <div class="md:grid-cols-2 grid gap-4">
+    <div class="md:grid-cols-2 grid gap-10">
       <Project
         github={"https://github.com/Joe-Newm/art-portfolio-creator.git"}
         projectName={"Art Portfolio CMS"}
@@ -116,7 +116,7 @@ import SocialBig from "../components/SocialBig.astro";
 
     <h2 class="mt-32 mb-10 font-semibold">Game Projects</h2>
 
-    <div class="md:grid-cols-2 grid gap-4">
+    <div class="md:grid-cols-2 grid gap-10">
       <Project
         github={"https://github.com/Joe-Newm/libGDX-shooter-game"}
         projectName={"Zombie Survival Game"}
