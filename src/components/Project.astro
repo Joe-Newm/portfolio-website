@@ -29,11 +29,11 @@ import Social from "./Social.astro";
   <div class="flex-grow">
     <div
       id="project"
-      class=`card w-full shadow-md relative z-10 border-gray-400 border rounded-xl flex justify-between mt-4 p-5 gap-5 bg-white`
+      class=`card w-full shadow-md relative z-10 border-gray-400 border rounded-xl flex justify-between mt-4 p-5 gap-5 bg-gray-200`
       style={`min-height: ${size}`}
     >
       <div class="flex md:flex-col flex-col gap-4">
-        <div class="rounded-md border border-1 border-gray-400 shadow-sm h-64 w-full overflow-hidden">
+        <div class="rounded-md border border-1 border-gray-400 bg-white shadow-sm h-64 w-full overflow-hidden">
           <img src={img} alt={altText} class="object-cover rounded-md" />
         </div>
 
@@ -47,13 +47,13 @@ import Social from "./Social.astro";
             <div class="flex flex-wrap gap-4">
               {
                 tools.map((tool) => (
-                  <div class="h-min min-w-min pt-1 pb-1 pl-4 pr-4 bg-gray-200 rounded-md">
+                  <div class="h-min min-w-min pt-1 pb-1 pl-4 pr-4 bg-gray-50 rounded-md">
                     <p>{tool}</p>
                   </div>
                 ))
               }
             </div>
-            <hr class="border-2 border-gray-200 mt-2" />
+            <hr class="border-1 border-gray-400 mt-2" />
             <iv>
               <p>{projectDescription}</p>
             </iv>
