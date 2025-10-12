@@ -64,6 +64,16 @@ import SocialBig from "../components/SocialBig.astro";
     <h2 class="font-semibold mb-10 mt-32">Selected Projects</h2>
     <div class="md:grid-cols-2 grid gap-10">
       <Project
+        github={"https://github.com/Joe-Newm/collectro-fullstack-app"}
+        projectName={"Collectro Web App"}
+        tools={["react", "vite", "javascript", "react router"]}
+        link={"https://collectro-web-app.netlify.app/"}
+        projectDescription={"Collectro is a work-in-progress web app built with react that allows users to search through a database of games using the RAWG.io API. The app currently features searching, pagination, and gamepages with more info. I plan to add more filtering options, authentication, and profiles for creating your own collection of games soon."}
+        img="/img/collectro.png"
+        altText="Image of Collectro Web App"
+        size="680px"
+      />
+      <Project
         github={"https://github.com/Joe-Newm/art-portfolio-creator.git"}
         projectName={"Art Portfolio CMS"}
         tools={["react", "node.js", "firebase"]}
@@ -93,7 +103,7 @@ import SocialBig from "../components/SocialBig.astro";
         altText="Image of ad to download techsavvy-hub-app"
         size="680px"
       />
-      <Project
+      <!-- <Project
         github={"https://github.com/Joe-Newm/pokemon-tcg-web"}
         projectName={"Pokemon-TCG Website"}
         tools={["javascript", "node.js", "express.js", "ejs"]}
@@ -102,7 +112,7 @@ import SocialBig from "../components/SocialBig.astro";
         altText="image of pokemon-tcg website homepage"
         projectDescription="This full-stack web app allows users to browse, search, and explore Pokémon trading cards with detailed information including pricing, stats, and artwork. The site integrates with the Pokémon TCG API to display dynamic card data. Users can search cards by name using a live search bar and navigate through results with server-side pagination for a smooth, responsive experience. "
         size="680px"
-      />
+      /> -->
 
       <!--         
         <Projectclick
